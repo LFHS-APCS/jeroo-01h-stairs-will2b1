@@ -9,11 +9,22 @@ public class Jeroo extends JerooBase {
     * IMPORTANT:  It needs to call helper method(s).
     */
     public void climbStairs() {
-        
+        step();
+        step();
+        step();
+        step();
     }
     
     // Put any helpermethods here.  Be sure to comment the helper methods using /** */
-    
+
+    /*this completes one step, turning, going up, turning and picking*/
+    public void step(){
+      turn(LEFT);
+      hop();
+      turn(RIGHT);
+      hop();
+      pick();
+    }
     
     
     
